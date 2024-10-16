@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.header-nav{
+   
+    backdrop-filter: blur(5px);
+    /* background-color: white; */
+    color:#40A578; /* Text color */
+    padding: 1rem 8;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .logo-img{
+    height: 70px;
+    width: 80px;
+  }
+  
+  .container-nav {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav {
+    margin-left:auto;
+    display: flex;
+  }
+  
+  .nav__list {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav__item {
+    margin-left: 1rem;
+    
+  }
+  
+  .nav__item a {
+    color: #40A578;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-weight:600;
+  }
+  
+  .nav__item a:hover {
+    color: #40A578;
+    border:2px solid #40A578;
+    padding:5px;
+    border-radius:15px;
+    font-weight:600;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      width: 100%;
+      margin-left:auto;
+    }
+    .nav__list {
+        list-style:none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+      }
+    
+    .nav.active {
+    
+      position: absolute;
+      top: 90px; /* Adjust based on header height */
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      display: flex;
+      width:30%;
+      right:8px;
+      padding: 10px;
+      border:2px solid #40A578;
+      
+    }
+  
+    .nav__item {
+      margin: 1rem 0;
+      text-align: left;
+     
+    }
+  
+    .menu-toggle {
+      display: flex;
+      margin-left: auto;
+    }
+    .nav__item a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        font-weight:600;
+      }
+      
+      .nav__item a:hover {
+        color: #40A578;
+        border:0px;
+        
+      }
+  }
+  @media (max-width: 380px ) {
+    .nav.active {
+    
+        position: absolute;
+        top: 90px; /* Adjust based on header height */
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        width:40%;
+        right:0;
+        padding: 10px;
+        border:2px solid #40A578;
+        
+      }
+      .nav__item a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        font-weight:600;
+      }
+      
+      .nav__item a:hover {
+        color: #40A578;
+        border:0px;
+        
+        
+      }
+  }
+
+  /* Hamburger menu icon */
+  /* From Uiverse.io by JulanDeAlb */ 
+.hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  

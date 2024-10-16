@@ -1,0 +1,26 @@
+.services-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .containers1 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .service {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h2 {
+    color: #40A578;
+    margin-bottom: 0.5rem;
+    font-size: large;
+  }
+  

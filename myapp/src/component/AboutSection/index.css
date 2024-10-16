@@ -1,0 +1,69 @@
+.about-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container-about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.container-about h2 {
+    color: #40A578;
+    margin-top: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 50px;
+    margin-top: 20px;
+    padding: 2rem 0;
+    margin-right: 40px;
+    margin-left: 70px;
+    
+}
+
+.team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #40A578;
+    font-weight: 600;
+}
+
+.team-member p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #666;
+}
+.team{
+    background: linear-gradient(135deg,#020202b9, #037425ae); 
+    width: 95vw; /* Full viewport width */
+    margin-left :-360px ;/* Ensure the section spans from the left edge to right edge */
+    margin-right:10px ;
+   border-radius: 4%;
+    padding: 2rem 0; /* Padding for the section */
+}
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

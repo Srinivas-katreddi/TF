@@ -1,0 +1,57 @@
+/* Ensure this CSS is applied to the Home component */
+
+.home {
+  background-image: url('https://res.cloudinary.com/drzlum1yv/image/upload/v1723282330/travelbg_zavphv.jpg'); /* Update with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* Text color */
+  width: 100%;
+}
+
+.home__content {
+  max-width: 600px; /* Adjust based on your design */
+  padding: 0rem;
+  height: 350px;
+}
+
+.home__title {
+  font-size: 3rem; /* Adjust as needed */
+  margin-bottom: 1rem;
+}
+
+.home__subtitle {
+  font-size: 1.25rem; /* Adjust as needed */
+  margin-bottom: 2rem;
+  font-style: italic;
+  color:#E6FF94;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.home__button {
+  background-color: #40A578; /* Button color */
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home__button:hover {
+  background-color: #9DDE8B; /* Darker button color on hover */
+  color: #000000;
+}
+@media (max-width:768px){
+  .home__title {
+      font-size: 2rem; /* Adjust as needed */
+      margin-bottom: 1rem;
+      margin-top:100px;
+    }
+}
